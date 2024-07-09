@@ -1,4 +1,4 @@
-package com.example.market_management.market_management;
+package com.example.market_management;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

@@ -4,7 +4,8 @@ module com.example.market_management.market_management {
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
+    requires java.sql;
 
-    opens com.example.market_management.market_management to javafx.fxml;
-    exports com.example.market_management.market_management;
+    opens com.example.market_management.Controllers to javafx.fxml;
+    exports com.example.market_management;
 }
