@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="10">
+    <Label text="Promotion List" style="-fx-font-size: 24px;"/>
+    <!-- Add your list view or table view for promotions here -->
+</VBox>

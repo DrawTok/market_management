@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.market_management.Dialogs.CategoryDetailDialog"
+          prefWidth="200" prefHeight="200" >
+    <Label text="Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <Label fx:id="nameLabel" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Description:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <Label fx:id="descriptionLabel" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Status:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <Label fx:id="statusLabel" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label text="Created By:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <Label fx:id="fullNameLabel" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Label text="Role:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <Label fx:id="roleLabel" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Label text="Department ID:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <Label fx:id="departmentLabel" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+    <Label text="Created At:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+    <Label fx:id="createAtLabel" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+</GridPane>

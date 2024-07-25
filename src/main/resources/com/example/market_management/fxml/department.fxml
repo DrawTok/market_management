@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.market_management.Controllers.DepartmentController">
+
+    <!-- TableView -->
+    <TableView fx:id="departmentTable" layoutX="14.0" layoutY="50.0" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="150.0" text="Name" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="150.0" text="Description" />
+            <TableColumn fx:id="createAtColumn" prefWidth="150.0" text="Created At" />
+        </columns>
+    </TableView>
+
+    <!-- Buttons -->
+    <HBox layoutX="14.0" layoutY="460.0" spacing="10.0">
+        <Button text="Add" fx:id="handleAddDepartment" onAction="#handleAddDepartment"/>
+        <Button text="Edit" fx:id="handleEditDepartment" onAction="#handleEditDepartment"/>
+        <Button text="Delete" fx:id="handleDeleteDepartment" onAction="#handleDeleteDepartment"/>
+    </HBox>
+    <TextField fx:id="searchField" layoutX="14.0" layoutY="10.0" promptText="Search..."/>
+</AnchorPane>

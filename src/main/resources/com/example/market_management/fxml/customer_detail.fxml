@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.market_management.Dialogs.CustomerDetailDialog"
+          prefWidth="400" prefHeight="300">
+    <Label text="Full Name:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <Label fx:id="fullNameLabel" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Birthday:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <Label fx:id="birthdayLabel" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Address:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <Label fx:id="addressLabel" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label text="Phone Number:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <Label fx:id="phoneNumberLabel" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Label text="Type:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <Label fx:id="typeLabel" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Label text="Point:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <Label fx:id="pointLabel" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+    <Label text="Status:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+    <Label fx:id="statusLabel" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+</GridPane>

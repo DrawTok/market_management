@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.market_management.Controllers.DashboardController">
+    <left>
+        <VBox fx:id="buttonBox" prefHeight="746.0" prefWidth="200.0" spacing="10" style="-fx-background-color: #2a9df4; -fx-padding: 10;">
+            <!-- Other HBox elements for the menu items -->
+            <HBox fx:id="hboxHome" spacing="5">
+                <Pane fx:id="paneHome" prefWidth="5" />
+                <Text fx:id="textHome" onMouseClicked="#showHome" text="Home" style="-fx-fill: white; -fx-font-size: 16px; -fx-cursor: hand;" />
+            </HBox>
+            <HBox fx:id="hboxDepartment" spacing="5">
+                <Pane fx:id="paneDepartment" prefWidth="5" />
+                <Text fx:id="textDepartment" onMouseClicked="#showDepartment" text="Department" style="-fx-fill: white; -fx-font-size: 16px; -fx-cursor: hand;" />
+            </HBox>
+            <HBox fx:id="hboxCategory" spacing="5">
+                <Pane fx:id="paneCategory" prefWidth="5" />
+                <Text fx:id="textCategory" onMouseClicked="#showCategory" text="Category" style="-fx-fill: white; -fx-font-size: 16px; -fx-cursor: hand;" />
+            </HBox>
+            <HBox fx:id="hboxProduct" spacing="5">
+                <Pane fx:id="paneProduct" prefWidth="5" />
+                <Text fx:id="textProduct" onMouseClicked="#showProduct" text="Product" style="-fx-fill: white; -fx-font-size: 16px; -fx-cursor: hand;" />
+            </HBox>
+            <HBox fx:id="hboxPromotion" spacing="5">
+                <Pane fx:id="panePromotion" prefWidth="5" />
+                <Text fx:id="textPromotion" onMouseClicked="#showPromotion" text="Promotion" style="-fx-fill: white; -fx-font-size: 16px; -fx-cursor: hand;" />
+            </HBox>
+            <HBox fx:id="hboxEmployee" spacing="5">
+                <Pane fx:id="paneEmployee" prefWidth="5" />
+                <Text fx:id="textEmployee" onMouseClicked="#showEmployee" text="Employee" style="-fx-fill: white; -fx-font-size: 16px; -fx-cursor: hand;" />
+            </HBox>
+            <HBox fx:id="hboxCustomer" spacing="5">
+                <Pane fx:id="paneCustomer" prefWidth="5" />
+                <Text fx:id="textCustomer" onMouseClicked="#showCustomer" text="Customer" style="-fx-fill: white; -fx-font-size: 16px; -fx-cursor: hand;" />
+            </HBox>
+            <HBox fx:id="hboxVendor" spacing="5">
+                <Pane fx:id="paneVendor" prefWidth="5" />
+                <Text fx:id="textVendor" onMouseClicked="#showVendor" text="Vendor" style="-fx-fill: white; -fx-font-size: 16px; -fx-cursor: hand;" />
+            </HBox>
+            <!-- Separator for spacing -->
+            <Separator style="-fx-background-color: #FFFFFF;" />
+            <!-- Logout button -->
+            <HBox fx:id="hboxLogout" spacing="5">
+                <Pane fx:id="paneLogout" prefWidth="5" />
+                <Text fx:id="textLogout" onMouseClicked="#logout" text="Logout" style="-fx-fill: white; -fx-font-size: 16px; -fx-cursor: hand;" />
+            </HBox>
+        </VBox>
+    </left>
+    <center>
+        <Separator orientation="VERTICAL" />
+    </center>
+    <center>
+        <BorderPane fx:id="contentArea" />
+    </center>
+</BorderPane>

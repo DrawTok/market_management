@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.market_management.Controllers.EmployeeController">
+
+    <TableView fx:id="employeeTable" layoutX="14.0" layoutY="50.0" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID"/>
+            <TableColumn fx:id="nameColumn" text="Name"/>
+            <TableColumn fx:id="roleColumn" text="Role"/>
+            <TableColumn fx:id="departmentColumn" text="Department"/>
+            <TableColumn fx:id="statusColumn" text="Status"/>
+        </columns>
+    </TableView>
+    <HBox layoutX="14.0" layoutY="460.0" spacing="10.0">
+        <Button text="Add Employee" onAction="#handleAddEmployee"/>
+        <Button text="Edit Employee" onAction="#handleEditEmployee"/>
+        <Button text="View Details" onAction="#handleViewEmployeeDetails"/>
+    </HBox>
+    <TextField fx:id="searchField" layoutX="14.0" layoutY="10.0" promptText="Search..."/>
+
+</AnchorPane>
