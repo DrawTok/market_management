@@ -68,7 +68,7 @@ public class EmployeeDialog {
 
     public void setIsUpdate(boolean isUpdate) {
         this.isUpdate = isUpdate;
-        passwordField.setDisable(isUpdate); // Disable password field if updating
+        passwordField.setDisable(isUpdate);
     }
 
     @FXML

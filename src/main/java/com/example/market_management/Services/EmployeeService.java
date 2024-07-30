@@ -70,7 +70,7 @@ public class EmployeeService {
         }
 
         int responseCode = conn.getResponseCode();
-        if (responseCode != 201) {
+        if (responseCode != 200) {
             throw new IOException("Failed to add employee, response code: " + responseCode);
         }
     }
