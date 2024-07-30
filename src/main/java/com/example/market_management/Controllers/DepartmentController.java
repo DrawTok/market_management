@@ -33,8 +33,8 @@ public class DepartmentController {
     @FXML
     private TextField searchField;
 
-    private DepartmentService departmentService = new DepartmentService();
-    private ObservableList<Department> departmentList = FXCollections.observableArrayList();
+    private final DepartmentService departmentService = new DepartmentService();
+    private final ObservableList<Department> departmentList = FXCollections.observableArrayList();
 
     @FXML
     public void initialize() {

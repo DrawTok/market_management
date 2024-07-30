@@ -5,6 +5,7 @@ import com.example.market_management.Dialogs.VendorDialog;
 import com.example.market_management.Models.Category;
 import com.example.market_management.Models.Vendor;
 import com.example.market_management.Services.VendorService;
+import com.example.market_management.Services.VendorSingleton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -57,6 +58,7 @@ public class VendorController {
         try {
             List<Vendor> vendors = vendorService.getAllVendors();
             vendorList.setAll(vendors);
+            VendorSingleton.getInstance().setVendors(vendorList);
             vendorTable.setItems(vendorList);
         } catch (IOException e) {
             e.printStackTrace();

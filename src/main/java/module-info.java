@@ -9,6 +9,11 @@ module com.example.market_management.market_management {
     requires com.google.gson;
     requires java.prefs;
     requires com.fasterxml.jackson.annotation;
+    requires com.fasterxml.jackson.databind;
+    requires java.desktop;
+    requires javafx.swing;
+    requires com.google.zxing;
+    requires com.google.zxing.javase;
 
     opens com.example.market_management.Controllers to javafx.fxml;
     opens com.example.market_management.Dialogs to javafx.fxml;

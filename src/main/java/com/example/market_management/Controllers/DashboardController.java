@@ -37,6 +37,8 @@ public class DashboardController {
     private Pane paneCustomer;
     @FXML
     private Pane paneVendor;
+    @FXML
+    private Pane paneBill;
 
     @FXML
     private Pane paneLogout;
@@ -60,6 +62,7 @@ public class DashboardController {
         paneEmployee.setStyle("-fx-background-color: transparent;");
         paneCustomer.setStyle("-fx-background-color: transparent;");
         paneVendor.setStyle("-fx-background-color: transparent;");
+        paneBill.setStyle("-fx-background-color: transparent;");
         paneLogout.setStyle("-fx-background-color: transparent;");
     }
 
@@ -117,6 +120,13 @@ public class DashboardController {
         clearSelection();
         paneVendor.setStyle("-fx-background-color: white;");
         loadView("/com/example/market_management/fxml/vendor.fxml");
+    }
+
+    @FXML
+    private void showBill() {
+        clearSelection();
+        paneBill.setStyle("-fx-background-color: white;");
+        loadView("/com/example/market_management/fxml/bill.fxml");
     }
 
     @FXML

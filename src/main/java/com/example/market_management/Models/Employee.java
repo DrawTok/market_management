@@ -34,21 +34,6 @@ public class Employee {
     }
 
 
-
-    public Employee(int id, String username, String password, String email, String phoneNumber, String address, String fullName, LocalDate birthday, String role, Department department, boolean status) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.address = address;
-        this.fullName = fullName;
-        this.birthday = birthday;
-        this.role = role;
-        this.department = department;
-        this.status = status;
-    }
-
     public Employee(String username, String email, String phoneNumber, String address, String fullName, LocalDate birthday, Department department, boolean status) {
         this.username = username;
         this.email = email;

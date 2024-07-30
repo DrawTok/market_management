@@ -40,12 +40,10 @@ public class LoginController {
             ApiResponse<Data> response = authService.authenticateUser(username, password);
 
             if (response.isSuccess()) {
-                // Save token to UserSingleton
                 System.out.println("Data: "+response.getData());
                 SharedService.getInstance().setPreference(Constants.TOKEN, response.getData().getToken());
                 UserSingleton.getInstance().setUserToken(response.getData().getToken());
 
-                // Redirect to dashboard
                 Stage stage = (Stage) usernameField.getScene().getWindow();
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/market_management/fxml/dashboard.fxml"));
                 Parent dashboardPane = loader.load();

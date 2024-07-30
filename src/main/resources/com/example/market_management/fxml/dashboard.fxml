@@ -39,6 +39,10 @@
                 <Pane fx:id="paneCustomer" prefWidth="5" />
                 <Text fx:id="textCustomer" onMouseClicked="#showCustomer" text="Customer" style="-fx-fill: white; -fx-font-size: 16px; -fx-cursor: hand;" />
             </HBox>
+            <HBox fx:id="hboxBill" spacing="5">
+                <Pane fx:id="paneBill" prefWidth="5" />
+                <Text fx:id="textBill" onMouseClicked="#showBill" text="Bill" style="-fx-fill: white; -fx-font-size: 16px; -fx-cursor: hand;" />
+            </HBox>
             <HBox fx:id="hboxVendor" spacing="5">
                 <Pane fx:id="paneVendor" prefWidth="5" />
                 <Text fx:id="textVendor" onMouseClicked="#showVendor" text="Vendor" style="-fx-fill: white; -fx-font-size: 16px; -fx-cursor: hand;" />

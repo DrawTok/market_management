@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="10">
-    <Label text="Promotion List" style="-fx-font-size: 24px;"/>
-    <!-- Add your list view or table view for promotions here -->
-</VBox>
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.market_management.Controllers.PromotionController">
+    <TableView fx:id="promotionTable" layoutX="14.0" layoutY="50.0" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="codeColumn" text="Code"/>
+            <TableColumn fx:id="startDateColumn" text="Start Date"/>
+            <TableColumn fx:id="endDateColumn" text="End Date"/>
+        </columns>
+    </TableView>
+    <HBox layoutX="14.0" layoutY="460.0" spacing="10.0">
+        <Button text="Add" onAction="#handleAddPromotion"/>
+        <Button text="Edit" onAction="#handleEditPromotion"/>
+        <Button text="Delete" onAction="#handleDeletePromotion"/>
+    </HBox>
+    <TextField fx:id="searchField" layoutX="14.0" layoutY="10.0" promptText="Search..."/>
+
+</AnchorPane>

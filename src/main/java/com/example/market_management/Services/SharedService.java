@@ -8,7 +8,6 @@ public class SharedService {
     private Preferences prefs;
 
     private SharedService() {
-        // Get the Preferences instance for this class
         prefs = Preferences.userNodeForPackage(SharedService.class);
     }
 

@@ -29,6 +29,10 @@ public class Category {
         this.createAt = createAt;
     }
 
+    public Category(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }

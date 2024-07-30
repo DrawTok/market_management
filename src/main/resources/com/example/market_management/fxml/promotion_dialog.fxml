@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.market_management.Dialogs.PromotionDialog">
+    <children>
+        <GridPane hgap="10" vgap="10" layoutX="14.0" layoutY="14.0">
+            <children>
+                <Label text="Code:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                <TextField fx:id="codeField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                <Label text="Customer:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <ComboBox fx:id="customerComboBox" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                <Label text="Start Date:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                <DatePicker fx:id="startDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                <Label text="End Date:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                <DatePicker fx:id="endDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+                <HBox spacing="10" alignment="CENTER_RIGHT" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                    <children>
+                        <Button text="Save" onAction="#handleSave"/>
+                        <Button text="Cancel" onAction="#handleCancel"/>
+                    </children>
+                    <padding>
+                        <Insets top="10"/>
+                    </padding>
+                </HBox>
+            </children>
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+        </GridPane>
+    </children>
+</AnchorPane>

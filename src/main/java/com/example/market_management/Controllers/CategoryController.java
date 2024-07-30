@@ -5,6 +5,7 @@ import com.example.market_management.Dialogs.CategoryDialog;
 import com.example.market_management.Models.Category;
 import com.example.market_management.Models.User;
 import com.example.market_management.Services.CategoryService;
+import com.example.market_management.Services.CategorySingleton;
 import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -58,6 +59,7 @@ public class CategoryController {
         try {
             List<Category> categories = categoryService.getAllCategories();
             categoryList.setAll(categories);
+            CategorySingleton.getInstance().setCategories(categories);
             categoryTable.setItems(categoryList);
         } catch (IOException e) {
             e.printStackTrace();

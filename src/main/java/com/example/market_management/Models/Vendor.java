@@ -9,6 +9,13 @@ public class Vendor {
     private String description;
     private boolean status;
 
+    public Vendor() {
+    }
+
+    public Vendor(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }
@@ -20,6 +27,8 @@ public class Vendor {
     public String getName() {
         return name;
     }
+
+
 
     public void setName(String name) {
         this.name = name;

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.market_management.Dialogs.ProductDetailDialog">
+    <children>
+        <GridPane hgap="10" vgap="10">
+            <children>
+                <Label text="ID:"/>
+                <TextField fx:id="idField" GridPane.columnIndex="1" editable="false"/>
+
+                <Label text="Barcode:" GridPane.rowIndex="1"/>
+                <TextField fx:id="barcodeField" GridPane.columnIndex="1" GridPane.rowIndex="1" editable="false"/>
+
+                <Label text="Name:" GridPane.rowIndex="2"/>
+                <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="2" editable="false"/>
+
+                <Label text="Category:" GridPane.rowIndex="3"/>
+                <TextField fx:id="categoryField" GridPane.columnIndex="1" GridPane.rowIndex="3" editable="false"/>
+
+                <Label text="Unit Price:" GridPane.rowIndex="4"/>
+                <TextField fx:id="unitPriceField" GridPane.columnIndex="1" GridPane.rowIndex="4" editable="false"/>
+
+                <Label text="Unit:" GridPane.rowIndex="5"/>
+                <TextField fx:id="unitField" GridPane.columnIndex="1" GridPane.rowIndex="5" editable="false"/>
+
+                <Label text="In Stock:" GridPane.rowIndex="6"/>
+                <TextField fx:id="inStockField" GridPane.columnIndex="1" GridPane.rowIndex="6" editable="false"/>
+
+                <Label text="Description:" GridPane.rowIndex="7"/>
+                <TextArea fx:id="descriptionField" GridPane.columnIndex="1" GridPane.rowIndex="7" editable="false"/>
+
+                <Label text="Vendor:" GridPane.rowIndex="8"/>
+                <TextField fx:id="vendorField" GridPane.columnIndex="1" GridPane.rowIndex="8" editable="false"/>
+
+                <Label text="Created At:" GridPane.rowIndex="9"/>
+                <TextField fx:id="createdAtField" GridPane.columnIndex="1" GridPane.rowIndex="9" editable="false"/>
+
+                <Label text="Status:" GridPane.rowIndex="10"/>
+                <TextField fx:id="statusField" GridPane.columnIndex="1" GridPane.rowIndex="10" editable="false"/>
+            </children>
+        </GridPane>
+        <ImageView fx:id="barcodeImageView" fitWidth="200" fitHeight="100" />
+        <Button text="Close" onAction="#handleClose"/>
+        <Button text="Close" onAction="#handleClose"/>
+    </children>
+</VBox>

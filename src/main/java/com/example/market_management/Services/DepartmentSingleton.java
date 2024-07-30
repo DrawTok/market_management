@@ -13,7 +13,7 @@ public class DepartmentSingleton {
 
     public static DepartmentSingleton getInstance() {
         if (instance == null) {
-            synchronized (UserSingleton.class) {
+            synchronized (DepartmentSingleton.class) {
                 if (instance == null) {
                     instance = new DepartmentSingleton();
                 }
