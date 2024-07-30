@@ -55,7 +55,10 @@ public class EmployeeDialog {
                 birthdayPicker.setValue(employee.getBirthday());
             }
             roleComboBox.setValue(employee.getRole());
-            departmentComboBox.setValue(employee.getDepartment().getName());
+            if(employee.getDepartment() != null){
+                departmentComboBox.setValue(employee.getDepartment().getName());
+
+            }
         }
     }
 
